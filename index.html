@@ -10,27 +10,43 @@
   <body>
     <div id="container">
       <div id="calculator">
-        <div id="display">012345</div>
+        <div id="display">0</div>
         <div id="buttons">
-          <button class="button">AC</button>
-          <button class="button">+/-</button>
-          <button class="button">%</button>
-          <button class="button">/</button>
-          <button class="button">7</button>
-          <button class="button">8</button>
-          <button class="button">9</button>
-          <button class="button">*</button>
-          <button class="button">4</button>
-          <button class="button">5</button>
-          <button class="button">6</button>
-          <button class="button">-</button>
-          <button class="button">1</button>
-          <button class="button">2</button>
-          <button class="button">3</button>
-          <button class="button">+</button>
-          <button class="button">0</button>
-          <button class="button">.</button>
-          <button class="button">=</button>
+          <div class="row first-row">
+            <button class="button clear" type="button" data-key-clear>
+              AC
+            </button>
+            <button class="button delete" type="button" data-key-Backspace>
+              DEL
+            </button>
+            <button class="button operator" type="button" data-key-divide>
+              /
+            </button>
+          </div>
+
+          <div class="row">
+            <button class="button number" type="button" data-key-7>7</button>
+            <button class="button number" type="button" data-key-8>8</button>
+            <button class="button number" type="button" data-key-9>9</button>
+            <button class="button operator" type="button" data-key-*>*</button>
+          </div>
+          <div class="row">
+            <button class="button number" type="button" data-key-4>4</button>
+            <button class="button number" type="button" data-key-5>5</button>
+            <button class="button number" type="button" data-key-6>6</button>
+            <button class="button operator" type="button" data-key-->-</button>
+          </div>
+          <div class="row">
+            <button class="button number" type="button" data-key-1>1</button>
+            <button class="button number" type="button" data-key-2>2</button>
+            <button class="button number" type="button" data-key-3>3</button>
+            <button class="button operator" type="button" data-key-+>+</button>
+          </div>
+          <div class="row">
+            <button class="button number" type="button" data-key-0>0</button>
+            <button class="button dot" type="button" data-key-.>.</button>
+            <button class="button equal" type="button" data-key-Enter>=</button>
+          </div>
         </div>
       </div>
     </div>
