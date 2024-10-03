@@ -178,22 +178,6 @@ function inputBackspace() {
   }
 }
 
-function operate(x, y, op) {
-  if (op === '+') {
-    return x + y;
-  } else if (op === '-') {
-    return x - y;
-  } else if (op === '*') {
-    return x * y;
-  } else if (op === '/') {
-    if (y === 0) {
-      return 'lmao';
-    } else {
-      return x / y;
-    }
-  }
-}
-
 function roundAccurately(num, places) {
   return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }

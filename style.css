@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -29,12 +31,19 @@
   background-color: rgb(178, 185, 183);
   border: 0.5rem solid black;
   border-radius: 0.5rem;
-  font-size: 4.5rem;
   font-weight: 900;
   padding: 0.5rem;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.previous-operand {
+  font-size: 2rem;
+  color: #333;
+}
+.current-operand {
+  font-size: 3rem;
 }
 #buttons {
   display: flex;
