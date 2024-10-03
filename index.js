@@ -107,7 +107,6 @@ const calculator = new Calculator(
 numberButtons.forEach((button) =>
   button.addEventListener('click', () => {
     const key = button.innerText;
-    console.log(`You have pressed ${key}`);
     calculator.appendNumber(key);
     calculator.updateDisplay();
   })
@@ -135,10 +134,9 @@ deleteButton.addEventListener('click', () => {
   calculator.updateDisplay();
 });
 
-// KEyboard Support for later
+// Keyboard Support
 window.addEventListener('keydown', function (e) {
   key = e.key;
-  console.log(`You have pressed ${key}`);
   if (
     key === '0' ||
     key === '1' ||
