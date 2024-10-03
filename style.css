@@ -14,7 +14,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
 }
 #calculator {
   min-height: 700px;
